@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="top_control">
+        <attr name="select" format="color"></attr>
+        <attr name="no_select" format="color"></attr>
+        <attr name="stroke_color" format="color"></attr>
+        <attr name="bg_color" format="color"></attr><!--项目需要 不要设置-->
+        <attr name="text_stroke_color" format="color"></attr><!--项目需要 不要设置-->
+        <attr name="text_select" format="color"></attr>
+        <attr name="text_no_select" format="color"></attr>
+        <attr name="stroke_radius" format="integer"></attr>
+        <attr name="stroke_with" format="integer"></attr>
+        <attr name="text_size" format="dimension"></attr>
+        <attr name="left_text" format="string"></attr>
+        <attr name="left_center_text" format="string"></attr>
+        <attr name="right_center_text" format="string"></attr>
+        <attr name="right_text" format="string"></attr>
+        <attr name="hide" format="integer"></attr>
+    </declare-styleable>
+
+</resources>
