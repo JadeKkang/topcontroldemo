@@ -73,7 +73,8 @@ public class TopControl extends LinearLayout {
             bg_color = array.getColor(R.styleable.top_control_bg_color, ContextCompat.getColor(context, R.color.bg_color));
             stork_with = array.getInteger(R.styleable.top_control_stroke_with, 2);
             stork_radius = array.getInteger(R.styleable.top_control_stroke_radius, 8);
-            text_size = array.getDimension(R.styleable.top_control_text_size, 14);
+            float size = array.getDimension(R.styleable.top_control_text_size, 14);
+            text_size = px2sp(context, size);
             left_text = array.getString(R.styleable.top_control_left_text);
             left_center_text = array.getString(R.styleable.top_control_left_center_text);
             right_center_text = array.getString(R.styleable.top_control_right_center_text);
@@ -191,6 +192,11 @@ public class TopControl extends LinearLayout {
         right.setSelected(false);
     }
 
+    public float px2sp(Context context, float pxValue) {
+        final float fontScale = context.getResources().getDisplayMetrics().scaledDensity;
+        return (int) (pxValue / fontScale + 0.5f);
+    }
+
     /**
      * 对TextView设置不同状态时其文字颜色。
      *
@@ -252,11 +258,13 @@ public class TopControl extends LinearLayout {
 
     /**
      * 设置监听
+     *
      * @param itemClick
      */
     public void setItemClick(ItemClick itemClick) {
         this.itemClick = itemClick;
     }
+
     /**
      * 监听接口
      */
@@ -289,6 +297,7 @@ public class TopControl extends LinearLayout {
                 break;
         }
     }
+
     /**
      * 设置显示文字
      *
@@ -317,6 +326,7 @@ public class TopControl extends LinearLayout {
 
         }
     }
+
     /**
      * 作者  韩晓康
      * 时间  2018/9/20 10:53
