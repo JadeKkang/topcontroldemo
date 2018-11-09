@@ -78,12 +78,13 @@ maven { url 'https://jitpack.io' }<br>
 
 	3.setText(int[] text)设置文字显示
   
-  4.setHide(int hide)设置显示个数
+        4.setHide(int hide)设置显示个数
  
- #注意<br>
-   1.setChoice(int choice)当显示3个时候choice 是0 1 3;当显示2个时候choice 是0  3;当显示4个时候choice 是0  1  2  3<br>
+ #注意
+ 
+        1.setChoice(int choice)当显示3个时候choice 是0 1 3;当显示2个时候choice 是0  3;当显示4个时候choice 是0  1  2  3
    
-   2.void itemClick(View view, int i)监听回调 当显示3个时候i 是0 1 3;当显示2个时候i 是0  3;当显示4个时候i 是0  1  2  3<br>
+        2.void itemClick(View view, int i)监听回调 当显示3个时候i 是0 1 3;当显示2个时候i 是0  3;当显示4个时候i 是0  1  2  3
   
   
   
