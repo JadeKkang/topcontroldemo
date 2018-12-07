@@ -1,59 +1,61 @@
 # 效果展示
 ![](https://github.com/JadeKkang/topcontroldemo/blob/master/image/topcontrol.gif)
 # 使用
-1.在项目gradle中添加<br>  
-allprojects {<br> 
-repositories {<br> 
-...<br> 
-maven { url 'https://jitpack.io' }<br> 
-}<br> 
-}<br> 
-2.添加依赖<br> 
- {implementation 'com.github.JadeKkang:topcontroldemo:v1.0'}<br> 
-3.xml中使用<br>  
-显示2个<br> 
-<com.example.topcontrol.TopControl<br> 
-        android:layout_width="match_parent"<br> 
-        android:layout_marginLeft="30dp"<br> 
-        android:layout_marginTop="10dp"<br> 
-        android:layout_marginRight="30dp"<br> 
-        android:layout_height="wrap_content"<br> 
-        app:hide="2"<br> 
-        app:left_text="左"<br> 
-        app:right_text="右"<br> 
-        app:text_size="16sp"<br> 
-        ><br> 
-</com.example.topcontrol.TopControl><br> 
-显示3个<br> 
-<com.example.topcontrol.TopControl<br> 
-        android:id="@+id/top_control"<br>
-        android:layout_width="match_parent"<br> 
-        android:layout_marginLeft="30dp"<br> 
-        android:layout_marginTop="10dp"<br> 
-        android:layout_marginRight="30dp"<br> 
-        android:layout_height="wrap_content"<br> 
-        app:hide="3"<br> 
-        app:left_text="左"<br> 
-        app:left_center_text="中"<br> 
-        app:right_text="右"<br> 
-        app:text_size="16sp"<br> 
-        ><br> 
-</com.example.topcontrol.TopControl><br> 
-显示4个<br>
-<com.example.topcontrol.TopControl<br> 
-        android:layout_width="match_parent"<br> 
-        android:layout_marginLeft="30dp"<br> 
-        android:layout_marginTop="10dp"<br> 
-        android:layout_marginRight="30dp"<br> 
-        android:layout_height="wrap_content"<br> 
-        app:hide="4"<br> 
-        app:left_text="左"<br> 
-        app:left_center_text="左中"<br> 
-        app:right_center_text="右中"<br> 
-        app:right_text="右"<br> 
-        app:text_size="16sp"<br> 
-        ><br> 
-</com.example.topcontrol.TopControl><br> 
+     1.在项目gradle中添加
+        allprojects {
+           repositories {
+              ...<br> 
+              maven { url 'https://jitpack.io' }
+           }<br> 
+         }<br> 
+     2.添加依赖
+       {
+         implementation 'com.github.JadeKkang:topcontroldemo:v1.0'
+       }
+     3.xml中使用
+           <--显示2个-->
+       <com.example.topcontrol.TopControl
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="wrap_content"
+        app:hide="2" 
+        app:left_text="左"
+        app:right_text="右" 
+        app:text_size="16sp"
+        > 
+       </com.example.topcontrol.TopControl> 
+           <--显示3个--><br> 
+       <com.example.topcontrol.TopControl
+        android:id="@+id/top_control"
+        android:layout_width="match_parent" 
+        android:layout_marginLeft="30dp"> 
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="wrap_content"
+        app:hide="3" 
+        app:left_text="左"
+        app:left_center_text="中"
+        app:right_text="右"
+        app:text_size="16sp"
+        >
+        </com.example.topcontrol.TopControl>
+            <--显示4个-->
+       <com.example.topcontrol.TopControl 
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp" 
+        android:layout_marginRight="30dp" 
+        android:layout_height="wrap_content"
+        app:hide="4"
+        app:left_text="左" 
+        app:left_center_text="左中"
+        app:right_center_text="右中" 
+        app:right_text="右"
+        app:text_size="16sp" 
+        >
+        </com.example.topcontrol.TopControl>
 # 自定义属性
 | 属性 | 值 | 描述 | 
 | ------------- |:-------------:| -----:| 
